@@ -41,10 +41,10 @@ jobs:
           name: main.pdf
           path: main.pdf
           
-      - name: Archive Merged PDF
-        uses: actions/upload-artifact@v3
+      - name: Release
+        uses: softprops/action-gh-release@v1
         with:
-          name: main.pdf
-          path: main.pdf
+          tag_name: Release
+          files: main.pdf
 
             
