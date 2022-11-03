@@ -31,7 +31,7 @@ jobs:
       - name: compile and merge pdfs
         uses: docker://pandoc/latex:2.9
         with:
-          args: --output=merge.pdf ${{ env.files }}
+          args: --toc --output=merge.pdf ${{ env.files }}
   
       - name: Create Github Release
         uses: softprops/action-gh-release@v1
