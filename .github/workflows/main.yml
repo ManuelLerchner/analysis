@@ -36,10 +36,15 @@ jobs:
         with:
           args: --output=main.pdf ${{ steps.files_list.outputs.output1 }}
           
+      - name: print stats
+        run: |
+          ls
+          cat main.pdf
+          
       - name: Archive Merged PDF
         uses: actions/upload-artifact@v3
         with:
           name: Merged PDF
-          path: main.pdf
+          path: ./main.pdf
 
             
