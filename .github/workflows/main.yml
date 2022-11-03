@@ -33,10 +33,6 @@ jobs:
         with:
           args: --output=merge.pdf ${{ steps.files_list.outputs.files}}
   
-  release:
-    needs: render
-    runs-on: ubuntu-18.04
-    steps:
       - name: Create Github Release
         uses: softprops/action-gh-release@v1
         with:
