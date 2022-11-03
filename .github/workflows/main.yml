@@ -36,11 +36,9 @@ jobs:
         with:
           args: --output=main.pdf ${{ steps.files_list.outputs.output1 }}
         
-      - name: Make test data
-        run: echo ${{ github.sha }} > Release.txt
       - name: Upload Release Asset
         uses: softprops/action-gh-release@v1
         with:
           body: Render current version of pdf
-          tag_name: render
-          files: Release.txt
+          tag_name: Release
+          files: main.pdf
