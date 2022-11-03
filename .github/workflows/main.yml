@@ -19,7 +19,7 @@ on:
 jobs:
   # This workflow contains a single job called "build"
   render_pdf:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-18.04
 
     steps:
       - name: Set up Git repository
@@ -29,28 +29,22 @@ jobs:
         id: files_list
         run: |
           cd md
-          echo "name=$(printf '"md/%s" ' *.md)" >> $GITHUB_OUTPUT
+          echo "::set-output name=$(printf '"md/%s" ' *.md)"
       
       - name: compile and merge pdfs
-        uses: docker://pandoc/core:2.9
+        uses: docker://pandoc/latex:2.9
         with:
           args: --output=main.pdf ${{ steps.files_list.outputs.output1 }}
           
-      - name: print stats
-        run: |
-          ls
-          cat main.pdf
+      - uses: actions/upload-artifact@master
+        with:
+          name: output
+          path: output
           
       - name: Archive Merged PDF
         uses: actions/upload-artifact@v3
         with:
           name: Merged PDF
-          path: ./main.pdf
-          
-      - name: Archive Merged PDF
-        uses: actions/upload-artifact@master
-        with:
-          name: output
           path: output
 
             
