@@ -1,10 +1,6 @@
-# This is a basic workflow to help you get started with Actions
+name: Merge & Render PDF
 
-name: Render PDFs
-
-# Controls when the workflow will run
 on:
-  # Triggers the workflow on push or pull request events but only for the "master" branch
   push:
     branches:
       master
@@ -12,13 +8,10 @@ on:
     branches: 
       master
 
-  # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
-# A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  # This workflow contains a single job called "build"
-  render_pdf:
+  render:
     runs-on: ubuntu-18.04
 
     steps:
@@ -38,15 +31,20 @@ jobs:
       - name: compile and merge pdfs
         uses: docker://pandoc/latex:2.9
         with:
-          args: --output=main.pdf ${{ steps.files_list.outputs.files}}
-          
-      - name: Release
+          args: --output=merge.pdf ${{ steps.files_list.outputs.files}}
+  
+  release:
+    needs: render
+    runs-on: ubuntu-18.04
+    steps:
+      - name: Create Github Release
         uses: softprops/action-gh-release@v1
         with:
           tag_name: Release
-          files: main.pdf
+          files: merge.pdf
 
-      - uses: stefanzweifel/git-auto-commit-action@v4
+      - name: Push pdf to repo
+        uses: stefanzweifel/git-auto-commit-action@v4
         with:
             commit_message: Rerendered PDF
             
