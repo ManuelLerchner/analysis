@@ -31,15 +31,14 @@ jobs:
           cd md
           echo "::set-output name=files::$(printf '"md/%s" ' *.md)"
       
+      - name: print all files
+        run: 
+          echo compiling ${{ steps.files_list.outputs.files}}
+      
       - name: compile and merge pdfs
         uses: docker://pandoc/latex:2.9
         with:
           args: --output=main.pdf ${{ steps.files_list.outputs.files}}
-          
-      - uses: actions/upload-artifact@master
-        with:
-          name: main.pdf
-          path: main.pdf
           
       - name: Release
         uses: softprops/action-gh-release@v1
