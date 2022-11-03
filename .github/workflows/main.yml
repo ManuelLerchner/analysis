@@ -35,17 +35,11 @@ jobs:
         uses: docker://pandoc/latex:2.9
         with:
           args: --output=main.pdf ${{ steps.files_list.outputs.output1 }}
-        
-      - name: Build
-        run: echo ${{ github.sha }} > Release.txt
-        
-      - name: Upload Release Asset
-        uses: softprops/action-gh-release@v1
+          
+      - name: Archive Merged PDF
+        uses: actions/upload-artifact@v3
         with:
-          body: Render current version of pdf
-          tag_name: Release
-          files: |
-            main.pdf
-            Release.txt
+          name: Merged PDF
+          path: main.pdf
 
             
