@@ -39,4 +39,5 @@ jobs:
       - name: Upload Release Asset
         uses: softprops/action-gh-release@v1
         with:
+          tag_name: render
           files: main.pdf
