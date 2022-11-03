@@ -29,22 +29,22 @@ jobs:
         id: files_list
         run: |
           cd md
-          echo "::set-output name=$(printf '"md/%s" ' *.md)"
+          echo "::set-output name=files::$(printf '"md/%s" ' *.md)"
       
       - name: compile and merge pdfs
         uses: docker://pandoc/latex:2.9
         with:
-          args: --output=main.pdf ${{ steps.files_list.outputs.output1 }}
+          args: --output=main.pdf ${{ steps.files_list.outputs.files}}
           
       - uses: actions/upload-artifact@master
         with:
-          name: output
-          path: output
+          name: main.pdf
+          path: main.pdf
           
       - name: Archive Merged PDF
         uses: actions/upload-artifact@v3
         with:
-          name: Merged PDF
-          path: output
+          name: main.pdf
+          path: main.pdf
 
             
