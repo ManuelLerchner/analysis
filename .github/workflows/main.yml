@@ -22,16 +22,16 @@ jobs:
         id: files_list
         run: |
           cd md
-          echo "::set-output name=files::$(printf '"md/%s" ' *.md)"
+          echo "files=$(printf '"md/%s" ' *.md)" >> $GITHUB_ENV
       
       - name: print all files
         run: 
-          echo compiling ${{ steps.files_list.outputs.files}}
+          echo compiling ${{ env.files }}
       
       - name: compile and merge pdfs
         uses: docker://pandoc/latex:2.9
         with:
-          args: --output=merge.pdf ${{ steps.files_list.outputs.files}}
+          args: --output=merge.pdf ${{ env.files }}
   
       - name: Create Github Release
         uses: softprops/action-gh-release@v1
