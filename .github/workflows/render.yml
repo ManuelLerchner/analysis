@@ -49,7 +49,6 @@ jobs:
     - uses: actions/download-artifact@master
       with:
         name: merge
-        path: merge.pdf
 
     - name: Create Github Release
       uses: softprops/action-gh-release@v1
