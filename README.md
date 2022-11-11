@@ -4,13 +4,13 @@
 
 ## About
 
-Hier sind die wichtigsten Konzepte der Analysis Vorlesung von Prof. Dr. Silke Rolles im Wintersemester 2022/2023 zusammengefasst.
+Hier sind die wichtigsten Konzepte / Formeln der Analysis Vorlesung von Prof. Dr. Silke Rolles im Wintersemester 2022/2023 zusammengefasst.
 
-Die erstellten Mitschriften sind stark an den Vorlesungsfolien von Prof. Dr. Silke Rolles orientiert.
+Die erstellten Notizen sind stark an den Vorlesungsfolien von Prof. Dr. Silke Rolles orientiert.
 
 Die Mitschriften selbst sind in Markdown geschrieben und werden mithilfe einer GitHub-Action nach jedem Push mithilfe von [Pandoc](https://pandoc.org/) zu einem PDF konvertiert.
 
-Eine stets aktuelle Version der PDFs kann über [https://github.com/ManuelLerchner/analysis/releases/download/Release/merge.pdf)](https://github.com/ManuelLerchner/analysis/releases/download/Release/merge.pdf) heruntergeladen werden.
+Eine stets aktuelle Version der PDFs kann über [https://github.com/ManuelLerchner/analysis/releases/download/Release/merge.pdf](https://github.com/ManuelLerchner/analysis/releases/download/Release/merge.pdf) heruntergeladen werden.
 
 ## How to Contribute
 
