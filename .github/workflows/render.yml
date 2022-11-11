@@ -2,45 +2,59 @@ name: Merge & Render PDF
 
 on:
   push:
-    branches:
-      master
+    branches: master
   pull_request:
-    branches: 
-      master
+    branches: master
 
   workflow_dispatch:
 
 jobs:
-  render:
+  render_pdf:
     runs-on: ubuntu-18.04
 
     steps:
       - name: Set up Git repository
         uses: actions/checkout@v2
-      
+
       - name: create list of all files
         id: files_list
         run: |
           cd md
           echo "files=$(printf '"md/%s" ' *.md)" >> $GITHUB_ENV
-      
+
       - name: print all files
-        run: 
-          echo compiling ${{ env.files }}
-      
+        run: echo compiling ${{ env.files }}
+
       - name: compile and merge pdfs
         uses: docker://pandoc/latex:2.9
         with:
           args: --toc --top-level-division=chapter -V classoption=oneside -V geometry:vmargin=14.5mm -V lang:de --output=merge.pdf ${{ env.files }}
-  
-      - name: Create Github Release
-        uses: softprops/action-gh-release@v1
+
+      - uses: actions/upload-artifact@master
         with:
+          name: merge
+          path: merge.pdf
+
+  push_merged_pdf:
+    if: github.event_name == 'push'
+    runs-on: ubuntu-18.04
+    needs: render_pdf
+
+    steps:
+    - uses: actions/checkout@master
+
+    - uses: actions/download-artifact@master
+      with:
+        name: merge
+        path: merge.pdf
+
+    - name: Create Github Release
+      uses: softprops/action-gh-release@v1
+      with:
           tag_name: Release
           files: merge.pdf
 
-      - name: Push pdf to repo
-        uses: stefanzweifel/git-auto-commit-action@v4
-        with:
+    - name: Push pdf to repo
+      uses: stefanzweifel/git-auto-commit-action@v4
+      with:
             commit_message: Rerendered PDF
-            
