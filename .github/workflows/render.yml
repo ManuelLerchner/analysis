@@ -44,7 +44,7 @@ jobs:
     - uses: actions/checkout@master
     
     - name: delete old merge.pdf
-    - run: rm merge.pdf
+      run: rm merge.pdf
 
     - uses: actions/download-artifact@master
       with:
