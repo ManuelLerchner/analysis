@@ -28,7 +28,7 @@ jobs:
       - name: compile and merge pdfs
         uses: docker://pandoc/latex:2.9
         with:
-          args: --toc --top-level-division=chapter -V classoption=oneside -V geometry:vmargin=14.5mm -V lang:de --output=merge.pdf ${{ env.files }}
+          args: --toc -V documentclass=report -V classoption=oneside -V geometry:vmargin=14.5mm -V lang:de --output=merge.pdf ${{ env.files }}
 
       - uses: actions/upload-artifact@master
         with:
@@ -41,22 +41,22 @@ jobs:
     needs: render_pdf
 
     steps:
-    - uses: actions/checkout@master
-    
-    - name: delete old merge.pdf
-      run: rm merge.pdf
+      - uses: actions/checkout@master
 
-    - uses: actions/download-artifact@master
-      with:
-        name: merge
+      - name: delete old merge.pdf
+        run: rm merge.pdf
 
-    - name: Create Github Release
-      uses: softprops/action-gh-release@v1
-      with:
+      - uses: actions/download-artifact@master
+        with:
+          name: merge
+
+      - name: Create Github Release
+        uses: softprops/action-gh-release@v1
+        with:
           tag_name: Release
           files: merge.pdf
 
-    - name: Push pdf to repo
-      uses: stefanzweifel/git-auto-commit-action@v4
-      with:
-            commit_message: Rerendered PDF
+      - name: Push pdf to repo
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: Rerendered PDF
