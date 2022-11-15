@@ -50,6 +50,8 @@ Außerdem: Falls $a_n \simeq b_n$ dann gilt:
 
 - Es sind entweder beide Folgen konvergent oder beide divergent
 
+- $\lim_{n \rightarrow \infty} {(b_n - a_n)} = 0$ gilt nur für konvergente, asymptotisch gleiche Folgen.
+
 ### Beschränktheit
 
 Eine Folge $(a_n)_{n\in\mathbb{N}}$ ist beschränkt falls $\exists K \in \mathbb{R} \space \space \forall n \in \mathbb{N} \space \space |a_n| \leq K$
@@ -90,3 +92,5 @@ Eine folge $(a_n)_{n\in\mathbb{N}}$ ist monoton fallend falls $a_n \geq a_{n+1}$
 **Endliche Geometrische Summe**
 
 - $\sum_{k=0}^n q^k = \frac{1-q^{n+1}}{1-q}$
+
+
