@@ -19,9 +19,6 @@ jobs:
       - name: install svg to png
         run: sudo apt-get install librsvg2-bin
 
-      - name: install font
-        run: sudo apt-get install -y fonts-dejavu-core
-
       - name: create list of all files
         id: files_list
         run: |
