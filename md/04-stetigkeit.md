@@ -6,13 +6,13 @@
 
 Eine Funktion $f: \mathbb{D} \subseteq \mathbb{R}^d \rightarrow \mathbb{R}^q$ mit Definitionsbereich $\mathbb{D}$ ist stetig im Punkt $x$ falls:
 
-- Für alle Folgen $(x_n)_{n \in \mathbb{N}}$ in $\mathbb{D}$ mit $lim_{n \rightarrow \infty} x_n = x$ gilt:
+- Für alle Folgen $(x_n)_{n \in \mathbb{N}}$ in $\mathbb{D}$ mit $\lim\limits_{n \rightarrow \infty} x_n = x$ gilt:
 
-  - $lim_{n \rightarrow \infty} f(x_n) = f(x)$
+  - $\lim\limits_{n \rightarrow \infty} f(x_n) = f(x)$
 
 - Man schreibt auch:
 
-  - $lim_{x \rightarrow x_0} f(x) = f(x_0)$
+  - $\lim\limits_{x \rightarrow x_0} f(x) = f(x_0)$
 
 Ist eine Funktion in allen Punkten $x \in \mathbb{D}$ stetig, nennt man sie auch _stetig_.
 
@@ -20,7 +20,7 @@ Ist eine Funktion in allen Punkten $x \in \mathbb{D}$ stetig, nennt man sie auch
 
 Um die Stetigkeit einer Funktion $f : \mathbb{D} \subseteq \mathbb{R}^d \rightarrow \mathbb{R}$ zu prüfen zeige, dass:
 
-- $\lim_{x \rightarrow x_0} |f(x) - f(x_0)| =0$
+- $\lim\limits_{x \rightarrow x_0} |f(x) - f(x_0)| =0$
 
 Beispiel: $f(x) = |x|$
 

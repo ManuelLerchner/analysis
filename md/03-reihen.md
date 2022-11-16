@@ -34,11 +34,11 @@ Falls die Reihe der Absolutbeträge einer Folge konvergiert, dann heißt die urs
 
 ### Notwendige Bedingung
 
-Damit $s_n$ konvergieren kann muss $\lim_{n \to \infty} a_n = 0$ gelten.
+Damit $s_n$ konvergieren kann muss $\lim\limits_{n \to \infty} a_n = 0$ gelten.
 
 ### Majorantenkriterium
 
-Falls $|a_n| \leq b_n$ für alle $n \in \mathbb{N}$, und $lim_{n \to \infty} b_n = b$, dann ist $a_n$ konvergent.
+Falls $|a_n| \leq b_n$ für alle $n \in \mathbb{N}$, und $\lim\limits_{n \to \infty} b_n = b$, dann ist $a_n$ konvergent.
 
 Beispiel:
 
@@ -58,7 +58,7 @@ Beispiel:
 
 ### Quotientenkriterium
 
-Sei $q=\lim_{n \to \infty} |\frac{a_{n+1}}{a_n}|$.
+Sei $q=\lim\limits_{n \to \infty} |\frac{a_{n+1}}{a_n}|$.
 
 - Falls $q < 1$, dann ist konvergiert die Summe $\sum_{n=1}^{\infty} a_n$.
 - Für $q > 1$ divergiert diese.
@@ -67,12 +67,12 @@ Sei $q=\lim_{n \to \infty} |\frac{a_{n+1}}{a_n}|$.
 Beispiel:
 
 - $s_n = \sum_{k=1}^n \frac{1}{n!}$
-- $q=\lim_{n \to \infty} |\frac{a_{n+1}}{a_n}| = \lim_{n \to \infty} |\frac{\frac{1}{(n+1)!}}{\frac{1}{n!}}| = \lim_{n \to \infty} \frac{1}{n+1} = 0$
+- $q=\lim\limits_{n \to \infty} |\frac{a_{n+1}}{a_n}| = \lim\limits_{n \to \infty} |\frac{\frac{1}{(n+1)!}}{\frac{1}{n!}}| = \lim\limits_{n \to \infty} \frac{1}{n+1} = 0$
 - Da $q < 1$, ist $s_n$ konvergent.
 
 ### Leibnitz Kriterium (Alternierende Reihen)
 
-Sei $(a_n)_{n \in \mathbb{N_0}}$ monoton fallend mit $lim_{n \to \infty} a_n = 0$
+Sei $(a_n)_{n \in \mathbb{N_0}}$ monoton fallend mit $\lim\limits_{n \to \infty} a_n = 0$
 
 - Dann konvergiert die alternierende Reihe $s = \sum_{k=0}^ \infty (-1)^k a_k$
 

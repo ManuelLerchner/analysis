@@ -6,12 +6,12 @@ Eine Folge $(a_n)_{n\in\mathbb{N}}$ ist eine Abbildung $\mathbb{N} \rightarrow \
 
 ### Rechenregeln Grenzwerte:
 
-Falls $lim_{n \rightarrow \infty} a_n = a$ und $lim_{n \rightarrow \infty} b_n = b$ dann gilt:
+Falls $\lim\limits_{n \rightarrow \infty} a_n = a$ und $\lim\limits_{n \rightarrow \infty} b_n = b$ dann gilt:
 
-- $lim_{n \rightarrow \infty} (a_n + b_n) = a + b$
-- $lim_{n \rightarrow \infty} (a_n \cdot b_n) = a \cdot b$
-- $lim_{n \rightarrow \infty} (c \cdot a_n) = c \cdot a$
-- $lim_{n \rightarrow \infty} \frac{a_n}{b_n} = \frac{a}{b}$ falls $b \neq 0$
+- $\lim\limits_{n \rightarrow \infty} (a_n + b_n) = a + b$
+- $\lim\limits_{n \rightarrow \infty} (a_n \cdot b_n) = a \cdot b$
+- $\lim\limits_{n \rightarrow \infty} (c \cdot a_n) = c \cdot a$
+- $\lim\limits_{n \rightarrow \infty} \frac{a_n}{b_n} = \frac{a}{b}$ falls $b \neq 0$
 
 ## 2.1 Konvergenz
 
@@ -23,7 +23,7 @@ Eine Folge $(a_n)_{n\in\mathbb{N}}$ konvergiert nach $a \in \mathbb{C}$ falls:
 
 Kurzschreibweisen:
 
-- $\lim_{n \rightarrow \infty} a_n = a$
+- $\lim\limits_{n \rightarrow \infty} a_n = a$
 - $a_n \stackrel{n \rightarrow \infty}{\longrightarrow} a$
 
 ### Definition Divergenz
@@ -44,13 +44,13 @@ Eine Folge $(a_n)_{n\in\mathbb{N}}$ divergiert gegen $-\infty$ / konvergiert une
 
 Falls $a_n \stackrel{n \rightarrow \infty}{\longrightarrow} a$ und $b_n \stackrel{n \rightarrow \infty}{\longrightarrow} b$ mit $a,b \neq 0$ dann gilt:
 
-- $a_n \simeq b_n$ falls $\lim_{n \rightarrow \infty} \frac{a_n}{b_n} = 1$ bzw. $\lim_{n \rightarrow \infty} \frac{b_n}{a_n} = 1$
+- $a_n \simeq b_n$ falls $\lim\limits_{n \rightarrow \infty} \frac{a_n}{b_n} = 1$ bzw. $\lim\limits_{n \rightarrow \infty} \frac{b_n}{a_n} = 1$
 
 Außerdem: Falls $a_n \simeq b_n$ dann gilt:
 
 - Es sind entweder beide Folgen konvergent oder beide divergent
 
-- $\lim_{n \rightarrow \infty} {(b_n - a_n)} = 0$ gilt nur für konvergente, asymptotisch gleiche Folgen.
+- $\lim\limits_{n \rightarrow \infty} {(b_n - a_n)} = 0$ gilt nur für konvergente, asymptotisch gleiche Folgen.
 
 ### Beschränktheit
 
@@ -62,7 +62,7 @@ Eine Folge $(a_n)_{n\in\mathbb{N}}$ ist beschränkt falls $\exists K \in \mathbb
 
 Falls $a_n \leq b_n \leq c_n$ für alle bis auf endlich viele $n$ dann gilt:
 
-- Falls $a \in \mathbb{R}$ mit $\lim_{n \rightarrow \infty} a_n = a = \lim_{n \rightarrow \infty} c_n$ dann gilt $\lim_{n \rightarrow \infty} b_n = a$
+- Falls $a \in \mathbb{R}$ mit $\lim\limits_{n \rightarrow \infty} a_n = a = \lim\limits_{n \rightarrow \infty} c_n$ dann gilt $\lim\limits_{n \rightarrow \infty} b_n = a$
 
 ## 2.2 Monotone Folgen
 
@@ -75,9 +75,9 @@ Eine folge $(a_n)_{n\in\mathbb{N}}$ ist monoton fallend falls $a_n \geq a_{n+1}$
 - Zusammenhang mit Supremum und Infimum
 
   - Falls $(a_n)_{n\in\mathbb{N}}$ eine monoton wachsende Folge ist dann gilt:
-    - $\lim_{n \rightarrow \infty} a_n = \sup_{n \in \mathbb{N}} a_n$
+    - $\lim\limits_{n \rightarrow \infty} a_n = \sup_{n \in \mathbb{N}} a_n$
   - Falls $(a_n)_{n\in\mathbb{N}}$ eine monoton fallende Folge ist dann gilt:
-    - $\lim_{n \rightarrow \infty} a_n = \inf_{n \in \mathbb{N}} a_n$
+    - $\lim\limits_{n \rightarrow \infty} a_n = \inf_{n \in \mathbb{N}} a_n$
 
 ### Hilfreiche Formeln
 
@@ -92,5 +92,3 @@ Eine folge $(a_n)_{n\in\mathbb{N}}$ ist monoton fallend falls $a_n \geq a_{n+1}$
 **Endliche Geometrische Summe**
 
 - $\sum_{k=0}^n q^k = \frac{1-q^{n+1}}{1-q}$
-
-
