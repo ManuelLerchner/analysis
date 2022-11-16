@@ -87,8 +87,8 @@ Eine folge $(a_n)_{n\in\mathbb{N}}$ ist monoton fallend falls $a_n \geq a_{n+1}$
 
 **Binomialkoeffizienten**
 
-- $(a+b)^n = \sum_{k=0}^n \binom{n}{k} a^{n-k} b^k$
+- $(a+b)^n = \sum\limits_{k=0}^n \binom{n}{k} a^{n-k} b^k$
 
 **Endliche Geometrische Summe**
 
-- $\sum_{k=0}^n q^k = \frac{1-q^{n+1}}{1-q}$
+- $\sum\limits_{k=0}^n q^k = \frac{1-q^{n+1}}{1-q}$
