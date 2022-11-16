@@ -10,11 +10,14 @@ on:
 
 jobs:
   render_pdf:
-    runs-on: ubuntu-18.04
+    runs-on: ubuntu-latest
 
     steps:
       - name: Set up Git repository
         uses: actions/checkout@v2
+
+      - name: install svg to png
+        run: sudo apt-get install librsvg2-bin
 
       - name: create list of all files
         id: files_list
@@ -28,7 +31,7 @@ jobs:
       - name: compile and merge pdfs
         uses: docker://pandoc/latex:2.9
         with:
-          args: --toc -V documentclass=report -V classoption=oneside -V geometry:vmargin=14.5mm -V lang:de --fail-if-warnings --output=merge.pdf ${{ env.files }}
+          args: -V documentclass=report -V classoption=oneside -V geometry:vmargin=14.5mm -V lang:de --fail-if-warnings --output=merge.pdf ${{ env.files }}
 
       - uses: actions/upload-artifact@master
         with:
@@ -37,7 +40,7 @@ jobs:
 
   push_merged_pdf:
     if: github.event_name == 'push'
-    runs-on: ubuntu-18.04
+    runs-on: ubuntu-latest
     needs: render_pdf
 
     steps:
