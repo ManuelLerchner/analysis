@@ -85,8 +85,21 @@ Beispiel:
 
 ### Addition von Reihen
 
-Seien $\sum\limits_{k=1}^\infty a_k$ und $\sum\limits_{k=1}^\infty b_k$ **konvergente** Reihen. Dann konvergiert auch die Summe der Reihen mit:
-$\sum\limits_{k=1}^\infty (a_k + b_k) = \sum\limits_{k=1}^\infty a_k + \sum\limits_{k=1}^\infty b_k$.
+Seien $\sum\limits_{k=1}^\infty a_k$ und $\sum\limits_{k=1}^\infty b_k$ **konvergente** Reihen. Dann folgt, dass auch die Summe der Beiden Reihen konvergiert:
+
+- $\sum\limits_{k=1}^\infty (a_k + b_k) = \sum\limits_{k=1}^\infty a_k + \sum\limits_{k=1}^\infty b_k$.
+
+### Multiplikation mit einer Konstanten
+
+Falls $\sum\limits_{k=1}^\infty a_k$ eine konvergente Reihe ist, dann konvergiert auch $\sum\limits_{k=1}^\infty c \cdot a_k$ mit $c \in \mathbb{R}$.
+
+### Addition von konvergenten und divergenten Reihen
+
+Seien $\sum\limits_{k=1}^\infty a_k$ eine konvergente Reihe und $\sum\limits_{k=1}^\infty b_k$ eine divergente Reihe. Dann divergiert auch die Reihe $\sum\limits_{k=1}^\infty (a_k + b_k)$.
+
+### Divergenz des Kehrwertes
+
+Sei $\sum\limits_{k=1}^\infty a_k$ eine konvergente Reihe positiver Zahlen. Dann divergiert $\sum\limits_{k=1}^\infty \frac{1}{a_k}$.
 
 ### Umordnungssatz
 
