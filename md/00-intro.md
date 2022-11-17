@@ -1,7 +1,12 @@
 ---
 title: TUM Analysis für Informatik [MA0902], WiSe 2022/2023
-author: Mitschriften basierend auf der Vorlesung von Prof. Dr. Silke Rolles
+subtitle: "Mitschriften basierend auf der Vorlesung von Prof. Dr. Silke Rolles"
 toc: true
+date: >-
+  Zuletzt aktualisiert: \today
+keywords:
+  [Analysis, Vorlesung, TUM, Informatik, Mathematik, MA0902, WiSe 2022/2023]
+urlcolor: blue
 include-before: |
   # Introduction
   ## About
@@ -27,6 +32,4 @@ include-before: |
   ## Contributors
 
     [![Contributors](https://contrib.rocks/image?repo=ManuelLerchner/analysis)](https://github.com/ManuelLerchner/analysis/graphs/contributors)
-
-urlcolor: blue
 ---
