@@ -59,3 +59,43 @@ Damit sind auch Summen und Produkte stetiger Funktionen stetig.
 - Rationalen Funktionen mit $f(z)=\frac{p(z)}{q(z)}$ mit $p$ und $q$ Polynomen sind auf ihrem Definitionsbereich stetig
 
 ## 4.2 Zwischenwertsatz
+
+Falls eine Funktion $f: [a,b] \rightarrow \mathbb{R}$ stetig auf dem Intervall $[a,b]$ ist, dann nimmt sie jeden Wert zwischen $f(a)$ und $f(b)$ an.
+
+Beispiel:
+
+- Hat $f(x)=\cos(x)-x$ eine Nullstelle auf $[0,\pi/2]$?
+  - $f(0) = 1$ und $f(\pi/2) = -\pi/2$
+  - Da die Funktion stetig ist, nimmt sie auf $[0,\pi/2]$ jeden Wert zwischen $1$ und $-\pi/2$ an. Somit
+    $\exists x \in [0,\pi/2]$ mit $f(x)=0$
+
+## 4.3 Häufungspunkte
+
+Sei $(a_{n_k})_{k\in \mathbb{N}}$ eine Teilfolge von $(a_n)_{n\in \mathbb{N}}$
+
+- Dann heißt $a^{*}$ ein _Häufungspunkt_ von $(a_n)_{n\in \mathbb{N}}$ falls es eine Teilfolge mit $\lim\limits_{k \rightarrow \infty} a_{n_k} = a^{*}$ gibt
+
+Falls die Folge $(a_n)_{n\in \mathbb{N}}$ konvergiert, dann ist der Häufungspunkt der Folge gleich dem Grenzwert.
+
+Beispiel:
+
+- $a_n = (-1)^n$
+- Diese Folge hat die Teilfolgen $(a_{2k})_{k\in \mathbb{N}}$ und $(a_{2k+1})_{k\in \mathbb{N}}$ welche jeweils konstant $1$ bzw $-1$ sind.
+  - Somit hat die Folge $a_n$ den Häufungspunkt $1$ und $-1$
+
+### Satz von Bolzano-Weierstrass
+
+Jede beschränkte Folge $(a_n)_{n\in \mathbb{N}}$ hat mindestens eine konvergente Teilfolge und somit auch mindestens einen Häufungspunkt.
+
+Diese Aussage lässt sich auch auf $\mathbb{R}^d$ mit $d\geq 2$ übertragen. Dabei heißt eine Folge $(x_n)_{n\in \mathbb{N}}$ mit $x_n \in \mathbb{R}^d$ beschränkt, falls:
+
+- $\exists M >0 \ \forall n \in \mathbb{N} \ ||x_n||_2 \leq M$.
+
+## 4.4 Existenz von Maxima und Minima
+
+Ein Punkt $x \in D$ heißt:
+
+- Minimumstellen von $f$ falls $f(x) \leq f(y)$ für alle $y \in D$
+- Maximumstellen von $f$ falls $f(x) \geq f(y)$ für alle $y \in D$
+
+Es ist möglich dass eine Funktion weden ein Maximum als auch ein Minimum besitzt. Da z.B.: nur das Infimum: $\inf_{x\in D} f(x)$ bzw. das Supremum: $\sup_{x\in D} f(x)$ bekannt ist und das dafür benötigte $x$ nicht in $D$ liegt.
