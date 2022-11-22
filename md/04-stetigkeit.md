@@ -139,7 +139,6 @@ Jede stetige Funktion $f: K \rightarrow \mathbb{R}$ besitzt ein Maximum und ein 
 
 Somit exisiteren $\underline{x}, \overline{x} \in K$ mit $f(\underline{x}) \leq f(x) \leq f(\overline{x})$ für alle $x \in K$.
 
-- $\underline x = \argmin_{x \in K} f(x)$ bzw. $f(\underline x) = \min_{x \in K} f(x)$
+- $\underline{x} = \arg\min_{x \in K} f(x)$ bzw. $f(\underline{x}) = \min_{x \in K} f(x)$
 
-- $\overline x = \argmax_{x \in K} f(x)$ bzw. $f(\overline x) = \max_{x \in K} f(x)$
-
+- $\overline{x} = \arg\max_{x \in K} f(x)$ bzw. $f(\overline{x}) = \max_{x \in K} f(x)$
