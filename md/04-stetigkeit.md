@@ -98,4 +98,48 @@ Ein Punkt $x \in D$ heißt:
 - Minimumstellen von $f$ falls $f(x) \leq f(y)$ für alle $y \in D$
 - Maximumstellen von $f$ falls $f(x) \geq f(y)$ für alle $y \in D$
 
-Es ist möglich dass eine Funktion weden ein Maximum als auch ein Minimum besitzt. Da z.B.: nur das Infimum: $\inf_{x\in D} f(x)$ bzw. das Supremum: $\sup_{x\in D} f(x)$ bekannt ist und das dafür benötigte $x$ nicht in $D$ liegt.
+Nicht jede Funktion hat ein Maximum bzw. Minimum (z.B. $f: \mathbb{R} \rightarrow \mathbb{R}$ , $f(x) = x$)
+
+### Abgeschlossenheit von Mengen
+
+Eine Menge $A \in \mathbb{R}^d$ heißt abgeschlossen, falls der Grenzwert jeder Konvergenten Folgen aus $A$ wieder in $A$ liegt.
+
+- $x_n \in A \ \forall n$ und $\lim\limits_{n \rightarrow \infty} x_n = x \implies x \in A$
+
+### Beschränktheit von Mengen
+
+Eine Menge $A \in \mathbb{R}^d$ heißt beschränkt, falls es eine positive Zahl $M$ gibt, sodass für alle $x \in A$ $|x| \leq M$ gilt.
+
+### Kompaktheit von Mengen
+
+Eine Menge $A \in \mathbb{R}^d$ heißt kompakt, falls sie abgeschlossen und beschränkt ist.
+
+Beispiel: $[0,1]$
+
+- $[0,1] \subseteq \mathbb{R}$ ist abgeschlossen, da für alle $0 \leq x_n \leq 1$ und $\lim\limits_{n \rightarrow \infty} x_n = x$ gilt, dass $x \in [0,1]$
+- Diese Menge ist auch beschränkt, da z.B. $|x| \leq 1$ für alle $x \in [0,1]$
+  - Somit ist $[0,1]$ kompakt
+
+Beispiel: $[0,1)$
+
+- Diese Menge ist nicht abgeschlossen, da z.B. $\lim\limits_{n \rightarrow \infty} 1-\frac{1}{n} = 1$ und $1 \notin [0,1)$
+- Somit ist diese Menge auch nicht kompakt.
+
+Jede kompakte Menge $K\in \mathbb{R} \ K \neq \emptyset$ ist beschränkt und besitzt somit auch ein Maximum und ein Minimum.
+
+Wenn $K\in \mathbb{R}^d$ kompakt ist $\iff$ Jede Folge aus $K$ besitzt eine Konvergente Teilfolge mit Grenzwert in $K$.
+
+Wenn $f: K \rightarrow \mathbb{R}$ stetig ist und $K$ kompakt ist, dann ist auch $f(K)$ bzw. das Bild von $f$ kompakt.
+
+- Somit ist insbesondere auch $f([a,b])$ kompakt, falls $f$ stetig ist. Somit besitzt $f([a,b])$ auch ein Maximum und ein Minimum.$$
+
+### Satz von Maximum und Minimum
+
+Jede stetige Funktion $f: K \rightarrow \mathbb{R}$ besitzt ein Maximum und ein Minimum in $K$. falls $K$ kompakt ist.
+
+Somit exisiteren $\underline{x}, \overline{x} \in K$ mit $f(\underline{x}) \leq f(x) \leq f(\overline{x})$ für alle $x \in K$.
+
+- $\underline x = \argmin_{x \in K} f(x)$ bzw. $f(\underline x) = \min_{x \in K} f(x)$
+
+- $\overline x = \argmax_{x \in K} f(x)$ bzw. $f(\overline x) = \max_{x \in K} f(x)$
+
