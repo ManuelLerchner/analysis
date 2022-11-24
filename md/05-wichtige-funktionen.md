@@ -44,8 +44,8 @@ Wichige Werte:
 ### Asymptotisches Verhalten von _exp_ und _ln_.
 
 - Die Exponentialfunktion wächst schneller gegen unendlich als jedes Polynom: 
-  $\lim \limits_{x \rightarrow \infty} \frac{e^x}{x} = \infty$
-- x wächst schneller gegen unendlich als jede Potenz des Logarithmus:
+  $\lim \limits_{x \rightarrow \infty} \frac{e^x}{x^m} = \infty$
+- $x$ wächst schneller gegen unendlich als jede Potenz des Logarithmus:
   $\lim \limits_{x \rightarrow \infty} \frac{x}{(\ln{x})^m} = \infty$
 - Mehrfache Anwendung des Logarithmus führt zu langsamerem Wachstum:
   $\lim \limits_{x \rightarrow \infty} \frac{\ln{x}}{\ln{\ln{x}}} = \infty$
@@ -61,11 +61,11 @@ Spezialfälle:
 - $\forall{n \in \mathbb{N}: x^n = e^{n \ln{x}} = e^{\ln{x}} \cdot e^{\ln{x}} \dots e^{\ln{x}} \text{(n-mal)}}=x \cdot x \dots x \text{(n-mal)}$
 - $\sqrt[n]{x}=x^{1/n}$, denn $(x^{1/n})^n=(e^{\frac{1}{n} \ln{x}})^n = e^{\ln{x}}=x$
 
-Logarithmus zur Basis b:
+Logarithmus zur Basis $b$:
 
 $\forall b>1$ und $a>0$
 
-$log_b(a)=\frac{\ln{(a)}}{\ln{b}}$
+$\log_b(a)=\frac{\ln{(a)}}{\ln{b}}$
 
 
 ## 5.3 Trigonometrische Funktionen
