@@ -113,7 +113,7 @@ Sind $\sum\limits_{k=0}^\infty a_k$ und $\sum\limits_{k=0}^\infty b_k$ absolut k
 
 ## 3.4 Eigenschaften der Exponentialfunktion
 
-$\exp(z) = \sum\limits_{k=1}^\infty \frac{z^k}{k!}$
+$\exp(z) = \sum\limits_{k=0}^\infty \frac{z^k}{k!}$
 
 - $\exp(w+z) = \exp(w) + \exp(z)$
 - $\exp(0) = 1 \text{ }\forall z \in \mathbb{C}$
