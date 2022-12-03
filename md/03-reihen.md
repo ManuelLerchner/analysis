@@ -81,7 +81,32 @@ Beispiel:
 - $s_n = \sum\limits_{k=0}^n (-1)^k \frac{1}{2^k}$
 - Da $a_k = \frac{1}{2^k}$ monoton fallend ist, und gegen 0 konvergiert, ist $s_n$ konvergent.
 
-## 3.3 Rechenregeln Reihen
+## 3.3 Wert einer Reihe
+
+### Wert einer Reihe
+
+Die Summe einer Reihe ist der Grenzwert der Partialsummen.
+
+Beispiele für konvergente Reihen:
+
+- $\lim\limits_{n \downarrow 0} x^a =$
+
+  - $0$ falls $a > 0$
+  - $1$ falls $a = 0$
+  - $\infty$ falls $a < 0$
+
+- $\lim\limits_{n \rightarrow \infty} x^a =$
+
+  - $0$ falls $a < 0$
+  - $1$ falls $a = 0$
+  - $\infty$ falls $a > 0$
+
+- $\lim\limits_{x \downarrow 0} \ln(x) = -\infty$
+- $\lim\limits_{x \rightarrow \infty} x\ln(x) = 0$
+
+- $\lim\limits_{x \rightarrow 0} \frac{\sin(ax)}{x} = a$
+
+## 3.4 Rechenregeln Reihen
 
 ### Addition von Reihen
 
@@ -111,7 +136,7 @@ Jede Umordnung von Reihenelementen muss gegen denselben Grenzwert konvergieren.
 
 Sind $\sum\limits_{k=0}^\infty a_k$ und $\sum\limits_{k=0}^\infty b_k$ absolut konvergent, dann ist auch $\sum\limits_{k=0}^\infty c_k$ mit $c_k = \sum\limits_{l=0}^\infty a_l b_{k-l}$ (Cauchy-Produkt) absolut konvergent.
 
-## 3.4 Eigenschaften der Exponentialfunktion
+## 3.5 Eigenschaften der Exponentialfunktion
 
 $\exp(z) = \sum\limits_{k=0}^\infty \frac{z^k}{k!}$
 

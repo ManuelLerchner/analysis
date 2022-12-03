@@ -40,6 +40,10 @@ Eine Folge $(a_n)_{n\in\mathbb{N}}$ divergiert gegen $-\infty$ / konvergiert une
 
 - $\forall K > 0 \space \space \exists n_0 \in \mathbb{N} \space \space \forall n \geq n_0 \space \space a_n \leq -K$
 
+Teilfolgen
+
+- Sollte es eine Teilfolge geben, die nicht konvergiert, dann ist die gesamte Folge nicht konvergent
+
 ### Asymptotische Äquivalenz
 
 Falls $a_n \stackrel{n \rightarrow \infty}{\longrightarrow} a$ und $b_n \stackrel{n \rightarrow \infty}{\longrightarrow} b$ mit $a,b \neq 0$ dann gilt:
