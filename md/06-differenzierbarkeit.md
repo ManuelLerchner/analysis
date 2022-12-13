@@ -80,8 +80,21 @@ $$f'(x) = a x^{a-1}$$
 
 - $(f^{-1})'(x) = \frac{1}{f'(f^{-1}(x))}$ Falls $f$ bijektiv und in $x$ differenzierbar ist.
 
-## Ableitung des Logarithmus
+  ### Beispiele:
 
-Aus der Regel für Ableitung der Umkehrfunktion folgt:
+  Aus der Regel für Ableitung der Umkehrfunktion folgt:
 
-- $\ln'(x) = \frac{1}{\exp(\ln(x))} = \frac{1}{x}$
+  - Ableitung des Logarithmus
+
+    - $\ln'(x) = \frac{1}{\exp(\ln(x))} = \frac{1}{x}$
+
+  - Ableitung von $\arcsin$
+
+    - $\arcsin'(x) = \frac{1}{\sin'(\arcsin(x))} = \frac{1}{\cos(\arcsin(x))}= \frac{1}{\sqrt{1-\sin^2(\arcsin(x))}} = \frac{1}{\sqrt{1-x^2}}$
+
+  - Ableitung von $\arccos$
+
+    - $\arccos'(x) = \frac{1}{\cos'(\arccos(x))} = \frac{1}{-\sin(\arccos(x))}= \frac{1}{-\sqrt{1-\cos^2(\arccos(x))}} = -\frac{1}{\sqrt{1-x^2}}$
+
+  - Ableitung von $\arctan$
+    - $\arctan'(x) = \frac{1}{\tan'(\arctan(x))} = \frac{1}{\sec^2(\arctan(x))} = \frac{1}{1+\tan^2(\arctan(x))} = \frac{1}{1+x^2}$
