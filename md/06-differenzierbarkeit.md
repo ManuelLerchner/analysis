@@ -2,8 +2,6 @@
 
 ## Landau Symbole
 
-### Definition
-
 - $f(x) = O(g(x))$ für $x \rightarrow x_0$ wenn:
 
   - $\exists \epsilon > 0 \quad \exists C>0 \quad \forall x \text{ mit } ||x-x_0|| < \epsilon \quad |f(x)| \leq C |g(x)|$
@@ -19,7 +17,7 @@
   - $\lim \limits_{x \rightarrow x_0} \frac{f(x)}{g(x)} = 0$
   - "f ist asymptotisch kleiner als g"
 
-## Differenzierbarkeit
+## Definition
 
 $f : I \rightarrow \mathbb{R}$ auf einem offenen Intervall $I \subseteq \mathbb{R}$ ist differenzierbar in $x_0 \in I$, falls für eine Zahl $f'(x_0) \in \mathbb{R}$ folgende Linearisierung gültig ist:
 
@@ -84,17 +82,17 @@ $$f'(x) = a x^{a-1}$$
 
   Aus der Regel für Ableitung der Umkehrfunktion folgt:
 
-  - Ableitung des Logarithmus
+- Ableitung des Logarithmus
 
-    - $\ln'(x) = \frac{1}{\exp(\ln(x))} = \frac{1}{x}$
+  - $\ln'(x) = \frac{1}{\exp(\ln(x))} = \frac{1}{x}$
 
-  - Ableitung von $\arcsin$
+- Ableitung von $\arcsin$
 
-    - $\arcsin'(x) = \frac{1}{\sin'(\arcsin(x))} = \frac{1}{\cos(\arcsin(x))}= \frac{1}{\sqrt{1-\sin^2(\arcsin(x))}} = \frac{1}{\sqrt{1-x^2}}$
+  - $\arcsin'(x) = \frac{1}{\sin'(\arcsin(x))} = \frac{1}{\cos(\arcsin(x))}= \frac{1}{\sqrt{1-\sin^2(\arcsin(x))}} = \frac{1}{\sqrt{1-x^2}}$
 
-  - Ableitung von $\arccos$
+- Ableitung von $\arccos$
 
-    - $\arccos'(x) = \frac{1}{\cos'(\arccos(x))} = \frac{1}{-\sin(\arccos(x))}= \frac{1}{-\sqrt{1-\cos^2(\arccos(x))}} = -\frac{1}{\sqrt{1-x^2}}$
+  - $\arccos'(x) = \frac{1}{\cos'(\arccos(x))} = \frac{1}{-\sin(\arccos(x))}= \frac{1}{-\sqrt{1-\cos^2(\arccos(x))}} = -\frac{1}{\sqrt{1-x^2}}$
 
-  - Ableitung von $\arctan$
-    - $\arctan'(x) = \frac{1}{\tan'(\arctan(x))} = \frac{1}{\sec^2(\arctan(x))} = \frac{1}{1+\tan^2(\arctan(x))} = \frac{1}{1+x^2}$
+- Ableitung von $\arctan$
+  - $\arctan'(x) = \frac{1}{\tan'(\arctan(x))} = \frac{1}{\sec^2(\arctan(x))} = \frac{1}{1+\tan^2(\arctan(x))} = \frac{1}{1+x^2}$

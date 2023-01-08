@@ -17,12 +17,12 @@ $I(f)=\int\limits_a^b f(x) dx$
 - $\int\limits_a^b f(x) dx = -\int\limits_b^a f(x) dx$
 - $\int\limits_a^a f(x) dx = 0$
 
-Bestimmte Integrale:
+Bestimmte Integrale $\left(\int\limits_a^b f(x) dx\right)$:
 
-- behalten die positivität der Funktion
-- behalten die monotonie eigenschaften zwischen zwei Funktionen
+- behalten die positivität der Funktion bei
+- behalten die monotonie eigenschaften zwischen zwei Funktionen bei
 - haben linearitäts eigenschaften
-- sind in teilintegrale aufteilbar
+- sind in Teilintegrale aufteilbar
 
 ## Mittelwertsatz
 

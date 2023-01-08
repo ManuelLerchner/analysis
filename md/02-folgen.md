@@ -85,14 +85,14 @@ Eine folge $(a_n)_{n\in\mathbb{N}}$ ist monoton fallend falls $a_n \geq a_{n+1}$
 
 ### Hilfreiche Formeln
 
-**Bernoulli-Ungleichung**
+#### Bernoulli-Ungleichung
 
 - $(1+x)^n \geq 1 + nx$ für $x > -1$ und $n \in \mathbb{N}$
 
-**Binomialkoeffizienten**
+#### Binomialkoeffizienten
 
 - $(a+b)^n = \sum\limits_{k=0}^n \binom{n}{k} a^{n-k} b^k$
 
-**Endliche Geometrische Summe**
+#### Endliche Geometrische Summe
 
 - $\sum\limits_{k=0}^n q^k = \frac{1-q^{n+1}}{1-q}$

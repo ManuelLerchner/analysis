@@ -15,17 +15,17 @@ Falls die Reihe der Absolutbeträge einer Folge konvergiert, dann heißt die urs
 
 ### Hilfreiche Reihen
 
-**Harmonische Reihe**
+#### Harmonische Reihe
 
 - $s_n = \sum\limits_{k=1}^n \frac{1}{k}$
 - $s_n$ divergiert nach $\infty$
 
-**Geometrische Reihe**
+#### Geometrische Reihe
 
 - $s_n = \sum\limits_{k=0}^n q^k$
 - $s_n$ divergiert nach $\infty$ falls $|q| \geq 1$ und konvergiert nach $\frac{1}{1-q}$ falls $|q| < 1$
 
-**Teleskopreihe**
+#### Teleskopreihe
 
 - $s_n = \sum\limits_{k=1}^n \frac{1}{k(k+1)} = \sum\limits_{k=1}^n (\frac{1}{k}-\frac{1}{k+1})$
 - $s_n$ konvergiert gegen 1

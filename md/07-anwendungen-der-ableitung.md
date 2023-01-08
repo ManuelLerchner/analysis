@@ -56,18 +56,18 @@ Ist $f:[a,b]\to\mathbb{R}$ auf $[a,b]$ differenzierbar, dann gilt:
 
 Eine funktion nimmt auf einem Intervall $I$ ein
 
-- Maximum an, wenn
+- **Maximum** an, wenn
   - Die Ableitung links von $x_0$ stets größer gleich 0 ist und die Ableitung rechts von $x_0$ stets kleiner gleich 0 ist.
-- Minimum an, wenn
+- **Minimum** an, wenn
   - Die Ableitung links von $x_0$ stets kleiner gleich 0 ist und die Ableitung rechts von $x_0$ stets größer gleich 0 ist.
 
 - Analog kann man ein lokales Maximum und Minimum bestimmen, wenn man nur einen kleinen Bereich um $x_0$ betrachtet.
 
 Außerdem:
 
-- $f''(x_0)>0 \implies f$ hat ein striktes, lokales Maximum an $x_0$
+- $f''(x_0)>0 \implies f$ hat ein striktes, lokales Minimum an $x_0$
 
-- $f''(x_0)<0 \implies f$ hat ein striktes, lokales Minimum an $x_0$
+- $f''(x_0)<0 \implies f$ hat ein striktes, lokales Maximum an $x_0$
 
 ## Berechnung von Grenzwerten
 
@@ -77,7 +77,7 @@ Ist $f,g:[a,b]\to\mathbb{R}$ auf $(a,b)$ differenzierbar und $\lim \limits_{x\to
 
 $$\lim \limits_{x\to x_0} \frac{f(x)}{g(x)} = \lim \limits_{x\to x_0} \frac{f'(x)}{g'(x)}$$
 
-falls der Grenzwert von $f'(x)/g'(x)$ existiert.
+falls der Grenzwert von $\lim\frac{f'(x)}{g'(x)}$ existiert.
 
 ## Höhere Ableitungen
 
@@ -90,18 +90,18 @@ Die höheren Ableitungen einer Funktion $f:[a,b]\to\mathbb{R}$ sind die Funktion
 
 Eine Funktion $f:[a,b]\to\mathbb{R}$ ist:
 
-- konvex
+- **konvex**
   - falls alle Punkte der Funktion im Intervall $[a,b]$ unterhalb der Verbindungslinie $(a,f(a))$ und $(b,f(b))$ liegen.
   - $\iff f''(x) \geq 0 \ \forall x\in[a,b]$
 
-- strikt konvex
+- **strikt konvex**
   - falls $f''(x) > 0 \ \forall x\in[a,b]$
   
-- konkav
+- **konkav**
   - falls alle Punkte der Funktion im Intervall $[a,b]$ oberhalb der Verbindungslinie $(a,f(a))$ und $(b,f(b))$ liegen.
   - $\iff f''(x) \leq 0 \ \forall x\in[a,b]$
 
-- strikt konkav
+- **strikt konkav**
   - falls $f''(x) < 0 \ \forall x\in[a,b]$
 
 ## Kurvendiskussion
