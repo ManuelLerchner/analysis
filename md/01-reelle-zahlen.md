@@ -16,11 +16,11 @@ $A$ ist abzählbar, wenn es eine surjektive Abbildung von $\mathbb{N}$ auf $A$ g
 
 Der Körper $\mathbb{R}$ ist angeordnet da:
 
-1.  $\forall a \in \mathbb{R}$ gilt entweder:
+1. $\forall a \in \mathbb{R}$ gilt entweder:
     - $a=0$ oder
     - $a>0$ oder
     - $a<0$
-2.  $\forall a,b \in \mathbb{R}$ mit $a,b>0$ gilt:
+2. $\forall a,b \in \mathbb{R}$ mit $a,b>0$ gilt:
     - $a+b>0$ und
     - $a \cdot b>0$
 

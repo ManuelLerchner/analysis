@@ -41,7 +41,7 @@ Wichige Werte:
 - $\lim \limits_{x \rightarrow 0} \ln(x) = -\infty$
 - $\lim \limits_{x \rightarrow \infty} \ln(x) = \infty$
 
-### Asymptotisches Verhalten von _exp_ und _ln_.
+### Asymptotisches Verhalten von _exp_ und _ln_
 
 - Die Exponentialfunktion wächst schneller gegen unendlich als jedes Polynom:
   $\lim \limits_{x \rightarrow \infty} \frac{e^x}{x^m} = \infty$

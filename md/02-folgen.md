@@ -4,7 +4,7 @@
 
 Eine Folge $(a_n)_{n\in\mathbb{N}}$ ist eine Abbildung $\mathbb{N} \rightarrow \mathbb{R}$ mit $n \mapsto a_n$
 
-### Rechenregeln Grenzwerte:
+### Rechenregeln Grenzwerte
 
 Falls $\lim\limits_{n \rightarrow \infty} a_n = a$ und $\lim\limits_{n \rightarrow \infty} b_n = b$ dann gilt:
 

@@ -80,7 +80,7 @@ $$f'(x) = a x^{a-1}$$
 
 - $(f^{-1})'(x) = \frac{1}{f'(f^{-1}(x))}$ Falls $f$ bijektiv und in $x$ differenzierbar ist.
 
-  ### Beispiele:
+### Beispiele
 
   Aus der Regel für Ableitung der Umkehrfunktion folgt:
 
