@@ -59,3 +59,15 @@ $\int f(x) g'(x) dx = f(x) g(x) - \int f'(x) g(x) dx$
 Beispiel: $\int \sin(x) x dx = -\cos(x) x + \int \cos(x) dx = -\cos(x) x + \sin(x)$
 
 ### Integration durch Substitution
+
+Ein Produkt von zwei Funktionen, von welchen ein Faktor die Ableitung der inneren Funktion der anderen Funktion ist, kann durch Substitution integriert werden.
+
+$\int\limits_a^b f(g(t)) g'(t) dt = \int\limits_{g(a)}^{g(b)} f(x) dx$
+
+Beispiel:
+
+- $\int\limits_1^2 (x^2+1)^2 *2x\ dx$
+  - Wähle $y=x^2+1$, damit gilt: $dy=2x dx$
+  - Es gibt zwei äquivalente Möglichkeiten:
+      1. $\int\limits_1^2 (y^2) *\frac{2x}{2x} dy$ = $\int\limits_1^2 y^2 dy$ = $\left[\frac{y^3}{3} \right]_1^2$ = $\left [\frac{(x^2+1)^3}{3} \right]_1^2 = 39$
+      2. $\int\limits_1^2 (y^2) *\frac{2x}{2x} dy$ = $\int\limits_1^2 y^2 dy$ = $\left[\frac{y^3}{3} \right]_{2}^{5}$ = $\frac{5^3}{3} - \frac{2^3}{3} = 39$
