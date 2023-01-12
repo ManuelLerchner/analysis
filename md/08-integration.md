@@ -71,3 +71,58 @@ Beispiel:
   - Es gibt zwei äquivalente Möglichkeiten:
       1. $\int\limits_1^2 (y^2) *\frac{2x}{2x} dy$ = $\int\limits_1^2 y^2 dy$ = $\left[\frac{y^3}{3} \right]_1^2$ = $\left [\frac{(x^2+1)^3}{3} \right]_1^2 = 39$
       2. $\int\limits_1^2 (y^2) *\frac{2x}{2x} dy$ = $\int\limits_1^2 y^2 dy$ = $\left[\frac{y^3}{3} \right]_{2}^{5}$ = $\frac{5^3}{3} - \frac{2^3}{3} = 39$
+
+#### Verschiebungsregel
+
+Aus der Substitutionsregel kann man auch die Verschiebung der Grenzen ableiten:
+
+- $\int\limits_a^b f(x+c) dx = \int\limits_{a+c}^{b+c} f(x) dx$
+
+#### Skalierungsregel
+
+- $\int\limits_a^b f(cx) dx = \frac{1}{c} \int\limits_{ac}^{bc} f(x) dx$
+
+## Uneigentliche Integrale
+
+Sind die Grenzen des Integrals Unendlich, oder hat die Funktion dort eine Polstelle, kann man einfach den Grenzwert des Integrals
+verwenden.
+
+Jedoch muss ein Integral auf dem ganzen Bereich wolhdefiniert sein. Ansonsten muss es in Teilintegrale aufgeteilt werden.
+
+- $\int\limits_a^\infty f(x) dx = \lim\limits_{b \to \infty} \int\limits_a^b f(x) dx$
+
+Beispiel:
+
+- $\int_1^\infty \frac{1}{x^2} dx = \lim\limits_{b \to \infty} \int_1^b \frac{1}{x^2} dx = \lim\limits_{b \to \infty} \left[\frac{-1}{x} \right]_1^b = \lim\limits_{b \to \infty} \frac{-1}{b}-\frac{-1}{1} = 1$
+
+Es ergibt sich auch:
+
+$$
+\int\limits_1^\infty \frac{1}{x^\alpha} dx =
+ \begin{cases}
+    \frac{1}{\alpha -1} & \text{für } \alpha < 1 \\
+    \infty & \text{für } \alpha \geq 1
+ \end{cases}
+$$
+
+## Parameterabhängige Integrale
+
+Falls eine Funktion von mehreren Variablen abhängt (z.B $f(x,y)=x^2+y$ ) kann auch nach nur einer der Variablen integriert werden.
+
+Falls $f:[a,b] \times [c,d] \to \mathbb{R}$ steitg ist, gilt:
+
+- $F(x) = \int\limits_c^d f(x,y) dy$ ist auch stetig
+- Satz von Fubini:
+  - $\int\limits_a^b \int\limits_c^d f(x,y) dy dx = \int\limits_c^d \int\limits_a^b f(x,y) dx dy$
+  - Das heißt, die Reihenfolge der Integrale darf getauscht werden
+- Falls $f$ eine stetige partielle Ableitung $\partial_y f$ besitzt:
+  - $F'(x) = \int\limits_c^d \partial_y f(x,y) dy$
+  - Das heißt Integral und Ableitung dürfen vertauscht werden
+
+Beispiel:
+
+- Integralsinus
+
+  - $Si(b)=\int\limits_0^b \frac{\sin(x)}{x} dx$
+
+  - $\lim\limits_{b \to \infty} Si(b) = \frac{\pi}{2}$
