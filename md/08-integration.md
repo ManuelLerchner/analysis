@@ -185,4 +185,3 @@ Für ganzzahlige Integrationsgrenzen und einen stetigen und monotonen Integrande
   \int\limits_a^b f(x) dx \leq
   \sum\limits_{k=a}^{b-1} f(x)
   $$
-
