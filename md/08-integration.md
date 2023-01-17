@@ -109,7 +109,7 @@ $$
 
 Falls eine Funktion von mehreren Variablen abhängt (z.B $f(x,y)=x^2+y$ ) kann auch nach nur einer der Variablen integriert werden.
 
-Falls $f:[a,b] \times [c,d] \to \mathbb{R}$ steitg ist, gilt:
+Falls $f:[a,b] \times [c,d] \to \mathbb{R}$ stetig ist, gilt:
 
 - $F(x) = \int\limits_c^d f(x,y) dy$ ist auch stetig
 - Satz von Fubini:
@@ -126,3 +126,62 @@ Beispiel:
   - $Si(b)=\int\limits_0^b \frac{\sin(x)}{x} dx$
 
   - $\lim\limits_{b \to \infty} Si(b) = \frac{\pi}{2}$
+
+## Vertauschung von Summation und Integration
+
+Existiert eine konvergente Majorante der Summe für alle $x \in [a, b]$, so können Integration und Summation vertauscht werden.
+
+$$
+\int\limits_a^b f(x) dx =
+\int\limits_a^b \sum\limits_{k=1}^\infty f_k(x)dx =
+\sum\limits_{k=1}^\infty \int\limits_a^b f_k(x)dx
+$$
+
+Beispiel:
+$$
+  \frac{1}{1+t} = \sum\limits_{k=0}^\infty (-t)^k \qquad \forall{|t| < 1} \qquad \text{(geometrische Reihe)}
+$$
+
+Eine konvergente Majorante für die Summe ist die geometrische Reihe $\sum\limits_{k=0}^\infty |x|^k$ mit $|t| \leq |x| < 1$. \
+Durch den oberen Satz folgt:
+
+$$
+\int\limits_a^b \sum\limits_{k=1}^\infty (-t)^k dt =
+\sum\limits_{k=1}^\infty \int\limits_a^b (-t)^k dt
+$$
+
+### Potenzreihen
+
+Funktionsdarstellungen der Form
+
+$$ f(x) = \sum\limits_{k=0}^\infty a_k x^k, \qquad |x| < r$$
+
+nennt man Potenzreihenentwicklung der Funktion $f$.
+Das größtmögliche $r>0$ nennt man den Konvergenzradius.
+
+## Abschätzungen von Summen und Reihen
+
+Für ganzzahlige Integrationsgrenzen und einen stetigen und monotonen Integranden können Integrale durch Summen von Funktionswerten und umgekehrt abgeschätzt werden.
+
+- $f$ monoton wachsend:
+  
+  - Anschaulich: Das Integral liegt zwischen den Summen der links- bzw. rechtsseitigen Funktionswerte, da die Funktion monoton wachsend ist.
+  - Analog liegt die Summe der rechten Funktionswerte zwischen dem Integral des linken und dem des rechten Intervalls.
+
+  $$
+  \sum\limits_{k=a}^{b-1} f(x) \leq
+  \int\limits_a^b f(x) dx \leq
+  \sum\limits_{k=a+1}^{b} f(x) \leq
+  \int\limits_{a+1}^{b+1} f(x) dx
+  $$
+  
+- $f$ monoton fallend:
+
+  - Analog liegt das Integral bei monoton fallenden Funktionen zwischen den Summen der rechten bzw. linken Funktionswerte.
+  - Die Summe der rechten Funktionswerte liegt zwischen dem Integral des rechten und des linken Intervalls.
+  $$
+  \int\limits_{a+1}^{b+1} f(x) dx \leq
+  \sum\limits_{k=a+1}^{b} f(x) \leq
+  \int\limits_a^b f(x) dx \leq
+  \sum\limits_{k=a}^{b-1} f(x)
+  $$
