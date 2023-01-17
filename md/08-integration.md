@@ -129,12 +129,12 @@ Beispiel:
 
 ## Vertauschung von Summation und Integration
 
-Möchte man das Integral einer Summe von Funktionen berechnen, existiert eine konvergente Majorante der Summe für alle $x \in [a, b]$, so können Integration und Summation vertauscht werden.
+Existiert eine konvergente Majorante der Summe für alle $x \in [a, b]$, so können Integration und Summation vertauscht werden.
 
 $$
 \int\limits_a^b f(x) dx =
 \int\limits_a^b \sum\limits_{k=1}^\infty f_k(x)dx =
-\sum\limits_{k=1}^\infty \int\limits_a^b f_k(x)dx 
+\sum\limits_{k=1}^\infty \int\limits_a^b f_k(x)dx
 $$
 
 Beispiel:
@@ -147,7 +147,7 @@ Durch den oberen Satz folgt:
 
 $$
 \int\limits_a^b \sum\limits_{k=1}^\infty (-t)^k dt =
-\sum\limits_{k=1}^\infty \int\limits_a^b (-t)^k dt 
+\sum\limits_{k=1}^\infty \int\limits_a^b (-t)^k dt
 $$
 
 ### Potenzreihen
@@ -164,16 +164,24 @@ Das größtmögliche $r>0$ nennt man den Konvergenzradius.
 Für ganzzahlige Integrationsgrenzen und einen stetigen und monotonen Integranden können Integrale durch Summen von Funktionswerten und umgekehrt abgeschätzt werden.
 
 - $f$ monoton wachsend:
- $$
- \sum\limits_{k=a}^{b-1} f(x) \leq 
- \int\limits_a^b f(x) dx \leq
- \sum\limits_{k=a+1}^{b} f(x) \leq
- \int\limits_{a+1}^{b+1} f(x) dx
- $$
- - $f$ monoton fallend:
- $$
- \int\limits_{a+1}^{b+1} f(x) dx \leq
- \sum\limits_{k=a+1}^{b} f(x) \leq
- \int\limits_a^b f(x) dx \leq
- \sum\limits_{k=a}^{b-1} f(x)
- $$
+  
+  - Anschaulich: Das Integral liegt zwischen den Summen der links- bzw. rechtsseitigen Funktionswerte, da die Funktion monoton wachsend ist.
+  - Analog liegt die Summe der rechten Funktionswerte zwischen dem Integral des linken und dem des rechten Intervalls.
+
+  $$
+  \sum\limits_{k=a}^{b-1} f(x) \leq
+  \int\limits_a^b f(x) dx \leq
+  \sum\limits_{k=a+1}^{b} f(x) \leq
+  \int\limits_{a+1}^{b+1} f(x) dx
+  $$
+  
+- $f$ monoton fallend:
+
+  - Analog liegt das Integral bei monoton fallenden Funktionen zwischen den Summen der rechten bzw. linken Funktionswerte.
+  - Die Summe der rechten Funktionswerte liegt zwischen dem Integral des rechten und des linken Intervalls.
+  $$
+  \int\limits_{a+1}^{b+1} f(x) dx \leq
+  \sum\limits_{k=a+1}^{b} f(x) \leq
+  \int\limits_a^b f(x) dx \leq
+  \sum\limits_{k=a}^{b-1} f(x)
+  $$
