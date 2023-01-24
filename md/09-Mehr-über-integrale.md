@@ -79,15 +79,6 @@ $$
 \ln(1+x) = \sum\limits_{k=0}^\infty (-1)^k\frac{x^{k+1}}{k+1}
 $$
 
-### Potenzreihen
-
-Funktionsdarstellungen der Form
-
-$$ f(x) = \sum\limits_{k=0}^\infty a_k x^k, \qquad |x| < r$$
-
-nennt man Potenzreihenentwicklung der Funktion $f$.
-Das größtmögliche $r>0$ nennt man den Konvergenzradius.
-
 ## Abschätzungen von Summen und Reihen
 
 Für ganzzahlige Integrationsgrenzen und einen stetigen und monotonen Integranden können Integrale durch Summen von Funktionswerten und umgekehrt abgeschätzt werden.
