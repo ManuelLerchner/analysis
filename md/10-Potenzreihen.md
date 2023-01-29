@@ -8,7 +8,7 @@ e^x &= \sum\limits_{k=0}^\infty \frac{x^k}{k!} &\quad \forall{x \in \mathbb{R}} 
 \sin(x) &= \sum\limits_{k=0}^\infty (-1)^k\frac{ x^{2k+1}}{(2k+1)!} &\quad \forall{x \in \mathbb{R}} \\
 \cos(x) &= \sum\limits_{k=0}^\infty (-1)^k\frac{ x^{2k}}{(2k)!} &\quad \forall{x \in \mathbb{R}} \\
 \ln(1+x) &= \sum\limits_{k=0}^\infty (-1)^k\frac{ x^{k+1}}{k+1} &\quad \forall{|x| < 1} \\
-\frac{1}{1+x} &= \sum\limits_{k=0}^\infty x^k &\quad \forall{|x| < 1} \\
+\frac{1}{1-x} &= \sum\limits_{k=0}^\infty x^k &\quad \forall{|x| < 1} \\
 (1+x)^n &= \sum\limits_{k=0}^n \binom{n}{k} x^k &\quad \forall{|x| < 1} \\
 (1+x)^a &= \sum\limits_{k=0}^\infty \binom{a}{k} x^k &\quad \forall{|x| < 1} \\
 \end{aligned}
