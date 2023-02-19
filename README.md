@@ -1,10 +1,10 @@
 [![Merge & Render PDF](https://github.com/ManuelLerchner/analysis/actions/workflows/render.yml/badge.svg)](https://github.com/ManuelLerchner/analysis/actions/workflows/render.yml)
 
-# Analysis WiSe 2022/2023
+# Zusammenfassung Analysis für Informatik, WiSe 2022/2023 TUM
 
 ## About
 
-Hier sind die wichtigsten Konzepte / Formeln der Analysis Vorlesung von Prof. Dr. Silke Rolles im Wintersemester 2022/2023 zusammengefasst.
+Hier sind die wichtigsten Konzepte / Formeln der Vorlesung `MA0902LV Analysis für Informatik` von Prof. Dr. Silke Rolles im Wintersemester 2022/2023 zusammengefasst.
 
 Die erstellten Notizen sind stark an den Vorlesungsfolien von Prof. Dr. Silke Rolles orientiert.
 
