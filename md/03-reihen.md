@@ -89,13 +89,13 @@ Die Summe einer Reihe ist der Grenzwert der Partialsummen.
 
 Beispiele für konvergente Reihen:
 
-- $\lim\limits_{n \downarrow 0} x^a =$
+- $\lim\limits_{x \downarrow 0} x^a =$
 
   - $0$ falls $a > 0$
   - $1$ falls $a = 0$
   - $\infty$ falls $a < 0$
 
-- $\lim\limits_{n \rightarrow \infty} x^a =$
+- $\lim\limits_{x \rightarrow \infty} x^a =$
 
   - $0$ falls $a < 0$
   - $1$ falls $a = 0$
@@ -141,7 +141,7 @@ Sind $\sum\limits_{k=0}^\infty a_k$ und $\sum\limits_{k=0}^\infty b_k$ absolut k
 $\exp(z) = \sum\limits_{k=0}^\infty \frac{z^k}{k!}$
 $\exp(x) = \lim\limits_{n \to \infty} (1+\frac{x}{n})^n$
 
-- $\exp(w+z) = \exp(w) + \exp(z)$
+- $\exp(w+z) = \exp(w) * \exp(z)$
 - $\exp(0) = 1 \text{ }\forall z \in \mathbb{C}$
 - $\exp(-z) = \frac{1}{\exp(z)} \text{ }\forall z \in \mathbb{C}$
 - $\exp(x) > 0 \text{ }\forall x \in \mathbb{R}$
