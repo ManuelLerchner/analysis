@@ -38,7 +38,7 @@ Eine Folge $(a_n)_{n\in\mathbb{N}}$ divergiert gegen $\infty$ / konvergiert unei
 
 Eine Folge $(a_n)_{n\in\mathbb{N}}$ divergiert gegen $-\infty$ / konvergiert uneigentlich falls:
 
-- $\forall K > 0 \space \space \exists n_0 \in \mathbb{N} \space \space \forall n \geq n_0 \space \space a_n \leq -K$
+- $\forall K > 0 \space \space \exists n_0 \in \mathbb{N} \space \space \forall n \geq n_0 \space \space a_n \leq $
 
 Teilfolgen
 

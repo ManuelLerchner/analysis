@@ -33,7 +33,7 @@ Ist $f(a)=f(b)$, so besitzt $f$ auf $(a,b)$ eine waagerechte Tangente.
 
 ## Monotonie
 
-Eine Funktion $f: I\to\mathbb{R}$ ist auf $ I$:
+Eine Funktion $f: I\to\mathbb{R}$ ist auf $I$:
 
 - monoton steigend, falls
   - $\forall x,y\in I: x\leq y \implies f(x)\leq f(y)$

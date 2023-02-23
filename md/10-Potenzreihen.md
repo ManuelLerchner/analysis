@@ -25,7 +25,7 @@ $$
 Für $h\rightarrow 0$ bezeichnet man:
 
 $$
-T_{n,a} f(h) = \sum\limits_{k=0}^n \frac{f^{(k)}(a)}{k!} h^k
+T_{n,a} f(h) = \sum\limits_{k=0}^n \frac{f^{(k)}(a)}{k!} (h-a)^k
 $$
 
 als n-tes Taylorpolynom von $f$ um $a$.
@@ -38,6 +38,8 @@ $$
 R_{n+1}f(a,x)= \frac{f^{(n+1)}(\xi)}{(n+1)!} (x-a)^{n+1}
 $$
 
+Dabei ist $\xi$ ein Punkt zwischen $a$ und $x$.
+
 Insgesamt also:
 
 $$
@@ -47,7 +49,7 @@ $$
 >Für eine beliebig oft differenzierbare Funktion $f$ **und**  das Restglied $R_{n+1}f(a,x)$ gegen $0$ konvergiert, gilt:
 
 $$
-f(x) = \sum\limits_{k=0}^n \frac{f^{(k)}(a)}{k!} (x-a)^k
+f(x) = \sum\limits_{k=0}^\infty \frac{f^{(k)}(a)}{k!} (x-a)^k
 $$
 
 Dies ist die Taylorreihe von $f$ um $a$.
@@ -58,7 +60,7 @@ Zu jeder Potenzreihe $P_n(x)$ gibt es einen Konvergenzradius $r\geq 0$:
 
 $$
 |x| < r \implies \sum\limits_{k=0}^n a_k x^k \text{ konvergiert}\\
-|x| \geq r \implies \sum\limits_{k=0}^n a_k x^k \text{ divergiert}
+|x| > r \implies \sum\limits_{k=0}^n a_k x^k \text{ divergiert}
 $$
 
 Der Konvergenzradius ist der kleinste $r$ für den die Potenzreihe konvergiert.
@@ -71,11 +73,13 @@ $$
 r=\frac{1}{\lim\limits_{k\rightarrow \infty} \sqrt[k]{|a_k|}}
 $$
 
+Damit konvergiert die Potenzreihe, wenn $|x-a| < r$. Die Randpunkte $x=a+r$ und $x=a-r$ müssen einzeln betrachtet werden.
+
 ## Analytische Funktionen
 
 Eine Funktion $f$ heißt analytisch, wenn sie in einem offenen Gebiet $U$ in der Nähe eines Punktes $a$ durch eine Taylorreihe um $a$ beschrieben werden kann.
 
-Äquivalemment: Bei der Konvergenzradius der Potenzreihe $P_n(x)$ um $a$ gilt $r>0$.
+Äquivalent: Bei der Konvergenzradius der Potenzreihe $P_n(x)$ um $a$ gilt $r>0$.
 
 Sind $f$ und $g$ in $x$ analytisch, mit den Konvergenzradien $r_f$ und $r_g$, so gilt:
 

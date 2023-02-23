@@ -18,8 +18,8 @@ Es ergibt sich auch:
 $$
 \int\limits_1^\infty \frac{1}{x^\alpha} dx =
  \begin{cases}
-    \frac{1}{\alpha -1} & \text{für } \alpha < 1 \\
-    \infty & \text{für } \alpha \geq 1
+    \frac{1}{\alpha -1} & \text{für } \alpha > 1 \\
+    \infty & \text{für } \alpha \leq 1
  \end{cases}
 $$
 

@@ -76,7 +76,10 @@ Extremwerte in $\mathbb{R}^n$ sind Punkte, an denen der Funktionswert $f$ maxima
 3. Prüfe, definitheit der Hesse-Matrix
    - Alle Eigenwerte sind größer 0: $x$ ist ein striktes lokales Minimum
    - Alle Eigenwerte sind kleiner 0: $x$ ist ein striktes lokales Maximum
+   - Alle Eigenwerte größer gleich 0: $x$ ist ein Minimum
+   - Alle Eigenwerte kleiner gleich 0: $x$ ist ein Maximum
    - Sonst: $x$ ist ein Sattelpunkt
+4. Es muss dabei auch auf Globale Extrema geprüft werden
 
 ## Totale Differenzierbarkeit in $\mathbb{R}^n$
 

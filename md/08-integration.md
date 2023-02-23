@@ -17,7 +17,7 @@ $I(f)=\int\limits_a^b f(x) dx$
 - $\int\limits_a^b f(x) dx = -\int\limits_b^a f(x) dx$
 - $\int\limits_a^a f(x) dx = 0$
 
-Bestimmte Integrale $\left(\int\limits_a^b f(x) dx\right)$:
+Bestimmte Integrale $(\int\limits_a^b f(x) dx)$:
 
 - behalten die positivität der Funktion bei
 - behalten die monotonie eigenschaften zwischen zwei Funktionen bei
@@ -28,11 +28,16 @@ Bestimmte Integrale $\left(\int\limits_a^b f(x) dx\right)$:
 
 Es gilt: $\int\limits_a^b f(x) p(x) dx = f(\xi) \int\limits_a^b p(x) dx$ mit $\xi \in [a,b]$
 
+Falls $p(x)$ integrierbar ist und $p(x)>0$. Außerdem muss $f$ stetig sein.
+
 ## Stammfunktion
 
 Eine Stammfunktion ist eine Funktion $F(x)$, die abgeleitet die Funktion $f(x)$ ergibt.
 
-zum Beispiel: $F(x) = \int\limits_a^x f(t) dt$ für $x \in [a,b]$
+Beispiel:
+
+- $F(x) = \int\limits_a^x f(t) dt$ für $x \in [a,b]$
+- Dies ist der Hauptsaatz der Integralrechnung. Es gilt $F'(x) = f(x)$ falls $f(x)$ stetig
 
 Alle Stammfunktionen einer Funktion unterscheiden sich nur durch eine Konstante.
 
@@ -46,9 +51,11 @@ Bei der Partialbruchzerlegung wird eine Funktion in Brüche zerlegt.
 
 zum Beispiel: $\frac{1}{x^2-4} = \frac{1}{x-2} - \frac{1}{x+2}$
 
-Diese kann dann leicht integriert werden:
+Diese können dann leicht integriert werden:
 
-$\int\frac{1}{x^2-4} dx = \int \frac{1}{x-2} dx - \int\frac{1}{x+2} dx = \ln\left|x-2\right| - \ln\left|x+2\right|$
+Beispiel:
+
+- $\int\frac{1}{x^2-4} dx = \int \frac{1}{x-2} dx - \int\frac{1}{x+2} dx = \ln\left|x-2\right| - \ln\left|x+2\right|$
 
 ### Partielle Integration
 

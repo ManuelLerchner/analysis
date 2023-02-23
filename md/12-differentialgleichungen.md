@@ -57,10 +57,9 @@ Sei $y'(x) + a(x)y(x) = f(x)$ eine inhomogene DGL erster Ordnung.
 
 Lineare Differentialgleichungen haben die Form:
 
- - $y''(x) + a(x)y'(x) + b(x)y(x) = f(x)$
++ $y''(x) + a(x)y'(x) + b(x)y(x) = f(x)$
 
 Dabei gibt es kein allgemeines Verfahren zur Lösung, weshalb wir nur denn Spezialfall mit konstanten Koeffizienten $a(x) = a$ und $b(x)=b$ betrachten.
-
 
 Sei $y''(x) + ay'(x) + by(x) = f(x)$ eine inhomogene DGL zweiter Ordnung.
 
@@ -74,6 +73,6 @@ Sei $y''(x) + ay'(x) + by(x) = f(x)$ eine inhomogene DGL zweiter Ordnung.
      + Real- und Imaginärteil von $e^{\lambda_1x}$ bzw. $e^{\lambda_2x}$ sind reelle Lösungen der homogenen DGL
      + Die allgemeine Lösung ist: $y(x) = c_1 e^{-\frac{a}{2} x}(c_1 \cos{(\omega x)} + c_2 \sin{(\omega x)})$
 2. Finden einer speziellen Lösung der inhomogenen DGL $y''(x) + ay'(x) + by(x) = f(x)$ mit einem Lösungsansatz in einer Form die $f(x)$ entspricht.
-   +  $e^{\alpha t}(a_1 \cos{(\omega t)} + a_2 \sin{(\omega t)})$
-   +  $\sum_{k=0}^n{a_k t^k}$
+   + $e^{\alpha t}(a_1 \cos{(\omega t)} + a_2 \sin{(\omega t)})$
+   + $\sum_{k=0}^n{a_k t^k}$
 3. Alle Lösungen der inhomogenen DGL sind gegeben durch die spezielle Lösung aus Schritt 2 addiert mit der allgemeinen Lösung der homogenen DGL aus Schritt 1

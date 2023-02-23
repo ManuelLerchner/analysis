@@ -9,7 +9,7 @@
 
 - $f(x) = O(g(x))$ für $x \rightarrow \infty$ wenn:
 
-  - $\exists M>0 \quad \exists C>0 \quad \forall x \text{ mit } x < - M \quad |f(x)| \leq C |g(x)|$
+  - $\exists M>0 \quad \exists C>0 \quad \forall x >  M \quad |f(x)| \leq C |g(x)|$
   - "Im unendlichen ist f bis auf Konstanten kleiner gleich g"
 
 - $f(x) = o(g(x))$ für $x \rightarrow x_0$ wenn:

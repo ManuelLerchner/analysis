@@ -131,7 +131,7 @@ Wenn $K\in \mathbb{R}^d$ kompakt ist $\iff$ Jede Folge aus $K$ besitzt eine Konv
 
 Wenn $f: K \rightarrow \mathbb{R}$ stetig ist und $K$ kompakt ist, dann ist auch $f(K)$ bzw. das Bild von $f$ kompakt.
 
-- Somit ist insbesondere auch $f([a,b])$ kompakt, falls $f$ stetig ist. Somit besitzt $f([a,b])$ auch ein Maximum und ein Minimum.$$
+- Somit ist insbesondere auch $f([a,b])$ kompakt, falls $f$ stetig ist. Somit besitzt $f([a,b])$ auch ein Maximum und ein Minimum.
 
 ### Satz von Maximum und Minimum
 
