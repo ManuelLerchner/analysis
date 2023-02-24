@@ -49,8 +49,8 @@ jobs:
     steps:
       - uses: actions/checkout@master
 
-      - name: delete old merge.pdf
-        run: rm docs/merge.pdf
+      - name: delete old merge.pdf if exists
+        run: rm -f docs/merge.pdf
 
       - uses: actions/download-artifact@master
         with:
