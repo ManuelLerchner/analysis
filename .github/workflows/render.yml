@@ -28,8 +28,8 @@ jobs:
       - name: print all files
         run: echo compiling ${{ env.files }}
 
-      - name: create docs folder
-        run: mkdir docs
+      - name: create docs folder if not exists
+        run: mkdir -p docs
 
       - name: compile and merge pdfs
         uses: docker://pandoc/latex:2.9
