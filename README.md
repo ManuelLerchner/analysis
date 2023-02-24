@@ -10,7 +10,7 @@ Die erstellten Notizen sind stark an den Vorlesungsfolien von Prof. Dr. Silke Ro
 
 Die Mitschriften selbst sind in Markdown geschrieben und werden mithilfe einer GitHub-Action nach jedem Push mithilfe von [Pandoc](https://pandoc.org/) zu einem PDF konvertiert.
 
-Eine stets aktuelle Version der PDFs kann über [https://github.com/ManuelLerchner/analysis/releases/download/Release/merge.pdf](https://github.com/ManuelLerchner/analysis/releases/download/Release/merge.pdf) heruntergeladen werden.
+Eine stets aktuelle Version der PDFs kann über [merge.pdf](docs/merge.pdf)
 
 ## How to Contribute
 

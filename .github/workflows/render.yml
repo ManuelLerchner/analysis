@@ -31,7 +31,7 @@ jobs:
       - name: compile and merge pdfs
         uses: docker://pandoc/latex:2.9
         with:
-          args: -V documentclass=report -V classoption=oneside -V geometry:vmargin=14.5mm -V lang:de --fail-if-warnings --output=merge.pdf ${{ env.files }}
+          args: -V documentclass=report -V classoption=oneside -V geometry:vmargin=14.5mm -V lang:de --fail-if-warnings --output=docs/merge.pdf ${{ env.files }}
 
       - uses: actions/upload-artifact@master
         with:
@@ -47,24 +47,11 @@ jobs:
       - uses: actions/checkout@master
 
       - name: delete old merge.pdf
-        run: rm merge.pdf
+        run: rm docs/merge.pdf
 
       - uses: actions/download-artifact@master
         with:
           name: merge
-
-      - uses: dev-drprasad/delete-tag-and-release@v0.2.0
-        with:
-          tag_name: Release
-          delete_release: true
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-      - name: Create Github Release
-        uses: softprops/action-gh-release@v1
-        with:
-          tag_name: Release
-          files: merge.pdf
 
       - name: Push pdf to repo
         uses: stefanzweifel/git-auto-commit-action@v4
