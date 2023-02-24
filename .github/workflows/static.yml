@@ -5,7 +5,7 @@ on:
   # Runs on pushes targeting the default branch
   workflow_run:
     workflows: ["Merge & Render PDF"]
-    branches: [main]
+    branches: [master]
     types:
       - completed
 
