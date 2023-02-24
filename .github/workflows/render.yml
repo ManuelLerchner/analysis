@@ -54,7 +54,8 @@ jobs:
 
       - uses: actions/download-artifact@master
         with:
-          name: docs/merge
+          name: merge
+          path: docs
 
       - name: Push pdf to repo
         uses: stefanzweifel/git-auto-commit-action@v4
