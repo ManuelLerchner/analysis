@@ -1,5 +1,5 @@
 [![Merge & Render PDF](https://github.com/ManuelLerchner/analysis/actions/workflows/render.yml/badge.svg)](https://github.com/ManuelLerchner/analysis/actions/workflows/render.yml)
-[![pages-build-deployment](https://github.com/ManuelLerchner/analysis/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/ManuelLerchner/analysis/actions/workflows/pages/pages-build-deployment)
+[![Deploy static content to Pages](https://github.com/ManuelLerchner/analysis/actions/workflows/static.yml/badge.svg)](https://github.com/ManuelLerchner/analysis/actions/workflows/static.yml)
 
 # Zusammenfassung Analysis für Informatik, WiSe 2022/2023 TUM
 
