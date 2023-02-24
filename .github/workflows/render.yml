@@ -34,12 +34,12 @@ jobs:
       - name: compile and merge pdfs
         uses: docker://pandoc/latex:2.9
         with:
-          args: -V documentclass=report -V classoption=oneside -V geometry:vmargin=14.5mm -V lang:de --fail-if-warnings --output=docs/merge.pdf ${{ env.files }}
+          args: -V documentclass=report -V classoption=oneside -V geometry:vmargin=14.5mm -V lang:de --fail-if-warnings --output=docs/analysis_für_informatik_MA0902_WS2223_merge.pdf ${{ env.files }}
 
       - uses: actions/upload-artifact@master
         with:
-          name: merge
-          path: docs/merge.pdf
+          name: analysis_für_informatik_MA0902_WS2223_merge.pdf
+          path: docs/analysis_für_informatik_MA0902_WS2223_merge.pdf
 
   push_merged_pdf:
     if: github.event_name == 'push'
@@ -49,12 +49,12 @@ jobs:
     steps:
       - uses: actions/checkout@master
 
-      - name: delete old merge.pdf if exists
-        run: rm -f docs/merge.pdf
+      - name: delete old analysis_für_informatik_MA0902_WS2223_merge.pdf if exists
+        run: rm -f docs/analysis_für_informatik_MA0902_WS2223_merge.pdf
 
       - uses: actions/download-artifact@master
         with:
-          name: merge
+          name: analysis_für_informatik_MA0902_WS2223_merge.pdf
           path: docs
 
       - name: Push pdf to repo

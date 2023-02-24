@@ -17,7 +17,7 @@ include-before: |
 
     Die Mitschriften selbst sind in Markdown geschrieben und werden mithilfe einer GitHub-Action nach jedem Push mithilfe von [Pandoc](https://pandoc.org/) zu einem PDF konvertiert.
 
-    Eine stets aktuelle Version der PDFs kann über [https://github.com/ManuelLerchner/analysis/releases/download/Release/merge.pdf](https://github.com/ManuelLerchner/analysis/releases/download/Release/merge.pdf) heruntergeladen werden.
+    Eine stets aktuelle Version der PDFs kann über [analysis_für_informatik_MA0902_WS2223_merge.pdf](https://manuellerchner.github.io/analysis/analysis_f%C3%BCr_informatik_MA0902_WS2223_merge.pdf)
 
   ## How to Contribute
 
